@@ -1,0 +1,4 @@
+numpy==1.26.4
+matplotlib==3.10.8
+graphviz==0.21
+ipykernel==7.2.0

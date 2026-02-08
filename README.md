@@ -1,3 +1,4 @@
+````markdown
 
 # micrograd
 
@@ -67,3 +68,25 @@ python -m pytest
 ### License
 
 MIT
+
+````
+
+## Quick start (reproducible per-notebook environment)
+
+If you need the notebook to run with specific packages (for example `numpy<2` to avoid ABI mismatches), use the provided bootstrap script which creates a per-notebook virtual environment and registers a Jupyter kernel.
+
+1. Create the environment and kernel (run once):
+
+```bash
+./bootstrap_env.sh
+```
+
+2. In Jupyter/VS Code select the kernel: "Python (micrograd-np1)".
+
+3. If you need Graphviz rendering, install the system `dot` tool (macOS):
+
+```bash
+brew install graphviz
+```
+
+Advanced: a `requirements.txt` and `environment.yml` are included for reproducible installs and Binder support.
