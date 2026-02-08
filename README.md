@@ -73,6 +73,12 @@ MIT
 
 ## Quick start (reproducible per-notebook environment)
 
+**Run in the cloud (no local setup):**
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rohanghosh/micrograd-fork/HEAD)
+
+**Or, run locally:**
+
 If you need the notebook to run with specific packages (for example `numpy<2` to avoid ABI mismatches), use the provided bootstrap script which creates a per-notebook virtual environment and registers a Jupyter kernel.
 
 1. Create the environment and kernel (run once):
